@@ -1,2 +1,2 @@
-# Notes
-Notes that I have taken for various courses/topics
+# ECON2101
+These are my notes for ECON2101.
