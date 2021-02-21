@@ -1,0 +1,205 @@
+\documentclass[a4paper]{article}
+
+\input{header}
+
+\begin{document}
+
+\input{title.tex} 
+
+\tableofcontents
+
+\newpage
+
+\section{Markets}
+\subsection{Supply and demand}
+\begin{itemize}
+    \item A \textbf{market demand} function for a particular good expresses the quantity demanded $Q^d$ in terms of the price $p$ of that good. The \textbf{inverse market demand} function expresses $p$ in terms of $Q^d$, representing the maximum price a customer is prepared to pay for a quantity $Q^d$.
+    \item The \textbf{Law of Demand} states that $\frac{dQ^d}{dp}$ is negative.  
+    \item In a system with multiple markets, the \textbf{aggregate demand} at a given price is the sum of the demanded quantities at that price: $Q^d(p) = \sum Q^d_i(p)$. This will often be piecewise linear.
+    \item \textbf{Market supply} $Q^s$ is also a function of $p$. The \textbf{inverse world supply} is the inverse of this function. 
+\end{itemize}
+
+\subsection{Equilibrium}
+\begin{itemize}
+    \item The \textbf{equilibrium price} $p^*$ and \textbf{equilibrium quantity} $Q^*$ are the price and quantity such that $Q^* = Q^d(p^*) = Q^s(p^*)$. 
+    \item If a market has an equilibrium price, it is said to be in \textbf{equilibrium}.
+    \item An equilibrium is said to be stable when it is self correcting: any deviation from the equilibrium will lead to either \textbf{excess supply} or \textbf{excess demand}. 
+\end{itemize}
+
+\subsection{Surplus}
+\begin{itemize}
+    \item The integral of $p(Q^d) - p^*$ from $0$ to the equilibrium quantity is the \textbf{consumer surplus}. Similarly the integral of $p^* - p(Q^s)$ from $0$ to the equilibrium quantity is the \textbf{consumer surplus}.  
+    \item \textbf{Total surplus} is the sum of producer and consumer surplus. 
+\end{itemize}
+
+\subsection{Determinants of Supply and Demand}
+\begin{itemize}
+    \item Factors other than price affect $Q^d$. Common such factors are:
+    \begin{itemize}
+        \item Buyer income levels. Increased income levels $\implies$ more demand for \textbf{normal goods} and less demand for \textbf{inferior goods}.
+        \item Prices of other goods (\textbf{substitutes} and \textbf{complements}). Increase in price of substitute $\implies$  increased demand for good in question. Increase in price of complements $\implies$  decreased demand for good in question.
+        \item Preferences of buyers
+        \item Number of buyers
+    \end{itemize}
+    \item Factors other than price affect $Q^s$. Common such factors are:
+    \begin{itemize}
+        \item Price of inputs
+        \item Technological factors 
+        \item Number of firms
+    \end{itemize}
+    \item Changes in these other determinants can cause the supply and demand curves to shift.
+    \item If the quantity demanded of a good increases with income levels, it is called a \textbf{normal good}. Otherwise it is known as an \textbf{inferior good}. 
+\end{itemize}
+
+\subsection{Interventions}
+\begin{itemize}
+    \item A \textbf{price ceiling} is an imposed maximum price. This causes the supplied quantity to reduce, creating \textbf{excess demand}. Sellers will be forced to engage in \textbf{rationing}. Even if the rationing is efficient, there will be \textbf{deadweight loss}, which indicates a \textbf{market inefficiency}. 
+    \item A \textbf{price floor} is an imposed minimum price, leading to \textbf{excess supply}. There will again be rationing (this time by the buyers) and deadweight loss.
+    \item A \textbf{quota} is a specified quantity that must be produced. This quantity must be less than the equilibrium quantity, or else some suppliers will be forced to produce at a loss which will cause them to go out of business. Therefore a \textbf{quota} can also be defined as a maximum quantity limit. Quotas will also create deadweight loss and inefficiencies.
+    \item A \textbf{tax} on production effectively increases the cost of production, shifting the supply curve up. Correspondingly, a tax on buyers decreases the demand, shifting the curve down. The new equilibrium price will be the same regardless of the party on which the tax is imposed.
+    \item The \textbf{incidence} of the tax on the buyers is the amount by which their surplus is reduced by the tax, and similarly for the sellers. The total tax revenue is equal to the sum of the incidence of the tax on the buyers and the sellers. The \textbf{incidence} on both buyers and sellers will be the same regardless of which party the tax is imposed on.
+    \item \textbf{Subsidies} are negative taxes. Both taxes and subsidies result in deadweight loss.
+\end{itemize}
+
+\subsection{Elasticities}
+\begin{itemize}
+    \item The \textbf{price elasticity of demand}, $\varepsilon$ is the percentage change in demand for a given percentage change in price. i.e. $$\varepsilon = \frac{dQ^d/Q^d}{dp/p} = \frac{dQ^d}{dp} \frac{p}{Q^d}$$
+    \item perfect elasticity is when $|\varepsilon| = \infty$ and perfect inelasticity is when $|\varepsilon| = 0$. If $|\varepsilon| > 1$ then demand is elastic, if $|\varepsilon| < 1$ then demand is inelastic and otherwise it is unit elastic. 
+    \item If revenue for a firm is $R = PQ$, then $R' = Q + PQ' = Q + \varepsilon Q = (1 + \varepsilon)Q$. Hence when demand is elastic, increasing price will decrease revenue, but when demand is inelastic, increasing price will increase revenue. 
+    \item The \textbf{income elasticity of demand}, $\eta$ replaces price with consumer income with the determiner of demand. Hence $\eta = \frac{\partial{Q^d}}{\partial{m}}\frac{m}{Q^d}$ where $m$ is consumer income. Normal goods have positive income elasticity. 
+    \item The \textbf{cross price elasticity of demand} on good 1 by good 2 is the impact of the change in price of good 2 on good 1: $$\varepsilon_{12} = \frac{\partial{Q^d_1}}{\partial{p_2}}\frac{p_2}{Q^d_1}$$
+    \item The various elasticities of supply can be defined in a similar way.
+\end{itemize}
+
+\section{Budgets}
+\subsection{Consumption Space}
+\begin{itemize}
+    \item The \textbf{consumption space} is the combination of goods that a consumer can potentially purchase. A point in the commodity space is called a \textbf{consumption bundle}. For $n$ goods, the commodity space is the volume $\R_+^n$. 
+    \item The consumer's \textbf{budget constraint} or \textbf{budget set} is given by $$\{\vec{x} \in \R_+^n : \vec{p} \cdot \vec{x} \leq m\},$$ where $\vec{p}$ is the vector of prices for the goods, $\vec{x}$ is the vector of quantities demanded and $m$ is the consumer's income. The \textbf{budget surface} is the boundary of this set. 
+    \item A budget is \textbf{competitive} when the prices vector is constant as a function of $\vec{x}$.
+    \item If an individual begins with a \textbf{consumption bundle} instead of an income, then this is called the \textbf{individual's endowment}, $\vec{\omega}$ with value $\vec{\omega} \cdot \vec{x}$.
+    \item In a situation with two goods, changing the price of one good alters the slope and one intercept, and changing the income alters the intercepts. If the individual begins with an endowment, then changing prices pivot the budget surface around $\vec{\omega}$.
+    \item Scaling $\vec{p}$ and $m$ by the same amount does not affect $\vec{x}$, so $\vec{p}$ can be normalised by choosing one element (the \textbf{numeraire}) to have a price of 1.
+\end{itemize}
+
+\subsection{Non competitive budgets}
+\begin{itemize}
+    \item A budget can be made non competitive from many sources: 
+    \begin{itemize}
+        \item Price discounts on incremental purchases: will make a budget line concave. 
+        \item Price discounts with bulk purchases: applies to all the purchased goods, not just incremental ones - creates a discontinuity in the budget line.
+        \item If an individual starts with an endowment (e.g. food stamps or currency), often those goods cannot be sold for their full value. This will result in a convex budget line.
+        \item Coupons may only become valuable after a certain amount is purchased. This will create a discontinuity in the middle of the budget line/surface. 
+    \end{itemize}
+\end{itemize}
+
+\section{Preferences}
+\subsection{Binary Relations}
+\begin{itemize}
+    \item Preferences are represented by binary relations between consumption bundles. A \textbf{regular binary relation} $\succsim$ is a total ordering on a set $S$. Total ordering satisfy
+    \begin{enumerate}
+        \item \textbf{reflexivity:} ($\forall x \in S$) $x \succsim x$
+        \item \textbf{totality:} ($\forall x, y \in S$) $x \succsim y$ or $y \succsim x$
+        \item \textbf{transitivity:} ($\forall x, y, z \in S$) $x \succsim y$ and $y \succsim z$ implies $x \succsim z$
+    \end{enumerate}
+    \item Often, \textbf{monotonicity} is also required: if $x \in S$ has every entry greater than or equal to $y \in S$, then $x \succsim y$. If at least one entry is in $x$ is greater than the corresponding entry in $y$, then \textbf{weak monotonicity} implies $x \succsim y$ and \textbf{strong monotonicity} implies $x \succ y$.
+    \item A binary relation is \textbf{convex} if for $x, y \in S$ with $x \succsim y$, when $z$ lies on the line segment joining $x$ and $y$, then $z \succsim y$.
+\end{itemize}
+
+\subsection{Utility}
+\begin{itemize}
+    \item A \textbf{utility function} assigns a real number to every consumption bundle. A regular binary relation can then be defined through the total ordering on the reals.
+    \item An \textbf{indifference curve} is a level curve of the utility function.
+    \item The \textbf{marginal rate of substitution} (MRS) of good 1 for good 2 is $\frac{MU_1}{MU_2}$ where $MU_i = \frac{\partial u}{\partial x_i}$. If only two goods are being considered, it is the negative of the slope of the indifference curve.
+    \item Utility is \textbf{ordinal} not \textbf{cardinal} because only the resulting binary relation on consumption bundles matters - the absolute value of the utility is irrelevant. This means that if $v = f(u)$ with $f' > 0$ for all $u > 0$ ($f$ monotonic increasing), the same preferences will be generated. Furthermore, the marginal rate of substitution on a given indifference curve will be the same if the utility function undergoes such a transformation. 
+\end{itemize}
+
+\subsection{Preferences}
+\begin{itemize}
+    \item \textbf{Linear preferences} can be represented by a utility function of the form $u(\vec{x}) = \beta \cdot \vec{x}$, where $\beta$ is a vector of coefficients. The commodities which have negative coefficients are called the \textbf{'bads'}. A good with a coefficient of 0 is called \textbf{neutral}.
+    \item If the marginal rate of substitution is constant at any point on the utility curve between two goods, then they are called \textbf{perfect substitutes}.
+    \item A consumption bundle that is a local maximum of the utility function is called a \textbf{bliss point} or a point of \textbf{satisfaction}.
+    \item \textbf{Leontief preferences} are those in which goods are \textbf{perfect compliments} of consumption (e.g. 4 wheels in a car). This corresponds to the case where no substitution is possible between the goods - the utility function is the minimum function with appropriate coefficients: $u(\vec{x}) = \min{\beta_i x_i}$. 
+    \item \textbf{Quasilinear preferences} are those of the form $u(x_1, x_2) = f(x_1) + x_2$ where $f$ is concave down. The indifference curves for these preferences are always vertically parallel and concave up.
+    \item \textbf{Cobb-Douglas preferences} are of the form $u(\vec{x}) = Ax_1^{a_1}x_2^{a_2}\hdots x_n^{a_n}$. The marginal rate of substitution of $x_i$ for $x_j$ is $\frac{a_i x_j}{a_j x_i}$. 
+    \item There is a \textbf{diminishing marginal rate of substitution} for both quasilinear preferences and Cobb-Douglas preferences.
+    \item All of these utility functions generate regular binary relations. They are all monotonic, but not all are strongly monotonic. All four preferences are convex.
+\end{itemize}
+
+\section{Individual Demands}
+\subsection{Preference Maximization}
+\begin{itemize}
+    \item An \textbf{interior solution} to the maximization problem is one in which the amount consumed of every good is positive. 
+    \item At the point of maximum utility, the indifference curve must be tangent to the budget line. The slope of the budget line in the ratio of the prices of the goods, and the slop of the indifference curve is the marginal rate of substitution of the two goods. Hence the maximum arises when MRS$(x_1$, $x_2) = \frac{p_1}{p_2}$.
+    \item If one of the maximising quantities is zero, then the solution is called a \textbf{corner solution}. A corner solution requires that the price ratio of is either always more than the marginal rate of substitution or always less than the marginal rate of substitution.
+\end{itemize}
+
+\subsection{Individual Demands}
+\begin{itemize}
+    \item An individual's demand $h(p_1, p_1, m) = (h_1, h_2)$ for two goods $h_1$ and $h_2$ is the quantity (or set of possible quantities) of each good the individual demands at the specified $(p_1, p_1, m)$. 
+    \item Each of the different utility functions generate different demand functions: 
+    \begin{itemize}
+        \item Linear utility $u(x_1, x_2) = ax_1 + bx_2$ generates
+        $$h(p_1, p_2, m) = 
+        \begin{cases}
+        (0, m / p_2) & \text{if } p_1/p_2 > a / b \\
+        \{(x_1, x_2) : p_1 x_1 + p_2 x_2 = m\} & \text{if } p_1/p_2 = a/b \\
+        (m / p_1, 0) & \text{if } p_1/p_2 < a / b \\
+        \end{cases}.$$
+        \item Leontief preferences $u(x_1, x_2) = \min(ax_1, bx_2)$ generates $$h(p_1, p_2, m) = \braket{\frac{mb}{p_1 b + p_2 a}, \frac{ma}{p_1 b + p_2 a}}.$$
+        \item The demand generated by quasilinear preferences $u(x_1, x_2) = f(x_1) + x_2$ are found when $f'(x_1) = p_1/p_2$. A central feature of quasilinear preferences is that the demand for one of the goods does not depend on the income at an interior solution.
+        \item Cobb-Douglas utility $u(x_1, x_2) = Ax_1^ax_2^b$ generates $$h(p_1, p_2, m) = \braket{\frac{m}{p_1}\frac{a}{(a + b)}, \frac{m}{p_2}\frac{b}{(a + b)}}.$$ If $a = b$, note that the demand lies at the midpoint of the budget line.
+    \end{itemize}
+    \item When a consumer's preferences are strictly monotonic, they will always be maximized on the budget line. We then say that the consumer's demand satisfies \textbf{budget exhaustion}.
+    \item Demand functions are homogeneous of degree zero in prices and income: $$h(t p_1, t p_2, t m) = h(p_1, p_2, m).$$
+\end{itemize}
+
+\section{Consumer Comparative Statics}
+\subsection{Price and Income Consumption Curves}
+\begin{itemize}
+    \item A \textbf{price consumption curve} (PPC) is the curve that the preference maximising bundle traces out as one of the prices changes. Similarly, the \textbf{income consumption curve} (ICC) results when the consumer's income changes.
+    \item In the language of consumption curves, the Law of Demand states that the PPC has a positive slope. A negative slope occurs when one of the goods is a \textbf{Giffen good}.
+    \item For Leontief preferences $u(x_1, x_2) = \min(ax_1, bx_2)$, the PPC will be a straight line along $ax_1 = bx_2$. For Cobb-Douglas preferences, it will be either a horizontal or vertical line depending on which price is changed.
+    \item The ICC for Cobb-Douglas preferences will be a straight line along $p_2 a x_2 = p_1 b x_1$. Quasilinear preferences will result in a vertical ICC.
+    \item A positively sloping ICC indicates that both goods are normal (or both inferior), whereas a negatively sloping ICC demonstrates that one of the goods is inferior. A vertical ICC shows that the good on the horizontal axis has no income effect (and visa-versa for a horizontal ICC).
+\end{itemize}
+
+\subsection{Decomposing Price Effects}
+\begin{itemize}
+    \item When the price of one good changes while the income and other prices remain fixed, the quantity demanded for that good will change. This is a \textbf{price effect}.
+    \item A price effect is broken down into a \textbf{substitution effect}, which describes how the consumer purchases more or less due to the change in \textbf{relative} price, and an \textbf{income effect}, which describes how the consumer purchases more or less due to a change in their effective purchasing power. The two main such decompositions are \textbf{Hicks-Allen} and \textbf{Slutsky}.
+    \item Starting at a preference maximising bundle A, the \textbf{Hicks-Allen} decomposition first finds the point B by holding utility constant and adjusting the price ratio. Contrastingly, the \textbf{Slutsky} approach finds point B by considering the individual's new endowment at A to be their income, and then finding the preference maximising bundle.
+    \item If C denotes the preference maximising bundle with the old income and new price structure, then the substitution effect is the difference in quantities between A and B, and the income effect is the difference in quantities between B and C.
+    \item The effective change in income is the difference between the individual's endowment at B and their true income.
+    \item For infinitesimal price changes, the substitution and income effects will be the same for the \textbf{Hicks-Allen} and \textbf{Slutsky} models.
+    \item For inferior goods (i.e. something like fast food), the income effect works in the opposite direction to the substitution effect. The income effect is typically smaller than the the substitution effect, but in the case where it is not (if a consumer spends a large percentage of their income on a commodity like rice this may be the case), then the good will not obey the law of demand and is called a Giffen good.
+\end{itemize}
+
+\section{Exchange Economics}
+\subsection{Allocations}
+\begin{itemize}
+    \item An economy where there is no production but only exchange is called a \textbf{pure exchange economy}.
+    \item An individual's \textbf{characteristic} $e^i = (u^i, \omega^i)$ captures both their utility function $u^i$ and their endowment $\omega^i$. An \textbf{economy} $e$ is a collection of individuals $(e^a, e^b, \hdots)$.
+    \item The \textbf{aggregate endowment} $\Omega$ is the sum of every individual's endowment.
+    \item A list of consumption bundles for all of the consumers is called an \textbf{allocation}. An allocation is \textbf{feasible} when the sum of goods in the allocation is less than or equal to the aggregate endowment.
+    \item The \textbf{Edgeworth box} is the set of feasible allocations. An exchange between two consumers corresponds to a movement from the \textbf{initial endowment} (the starting allocation) to another point in the Edgeworth box.
+\end{itemize}
+
+\subsection{Rational allocations}
+\begin{itemize}
+    \item \textbf{Individual rationality} says that if two people trade voluntarily, that trade must leave both people at least as well of as before the trade. An allocation $(x^1, x^2, \hdots, x^n)$ is said to be \textbf{rational} if $u^i(x^i) \geq u^i(\omega^i)$ for all $i = 1 \hdots n$. The \textbf{individually rational} allocations are the set of rational allocations given a certain initial endowment.
+    \item An allocation is said to be \textbf{Pareto superior} if it is rational and at least one consumer is strictly better off.
+    \item A \textbf{Pareto efficient} allocation it is not possible to reallocate goods without hurting one of the consumers: the set of Pareto superior allocations is empty
+    \item Given an initial endowment, a the Pareto efficient allocation is found by fixing one of the consumer's utilities, and using that indifference curve as the other consumer's budget line.
+    \item As an interior Pareto efficient allocation, must occur where the indifference curves are tangent, the set of all Pareto efficient allocations is found by setting the marginal rate of substitution for each of the consumers to be equal.
+    \item The set of all Pareto efficient allocations is called the \textbf{contract curve} and labeled PE.
+\end{itemize}
+
+\subsection{Walras Equilibrium}
+\begin{itemize}
+    \item \textbf{Walras prices} are the unique prices (up to normalisation) such that when every individual attempts to maximise their utility at market prices, the aggregate demand is the aggregate endowment. This is equivalent to saying that at these prices, every individual's budget set is tangent to their indifference curve at the point where their budget set intersects the contract curve.
+    \item The \textbf{Walras allocation} is the allocation that arises in a market with Walras prices. Equivalently, it is the Pareto efficient allocation $\vec{x}$ such that the line from $\vec{x}$ to the initial endowment is tangent to the individual's indifference curves.
+    \item A \textbf{Walras equilibrium} is the set of Walras prices and the Walras allocation. Theoretically,
+\end{itemize}
+
+\end{document}
