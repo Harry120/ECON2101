@@ -1,9 +1,5 @@
 \RequirePackage{etex}
 
-\title{ECON2101}
-\author{Harry Partridge}
-\date{Term 1 2021}
-
 \usepackage{alltt}
 \usepackage{amsfonts}
 \usepackage{amsmath}
@@ -15,6 +11,7 @@
 \usepackage{fancyhdr}
 \usepackage{graphicx}
 \usepackage[hidelinks]{hyperref}
+\usepackage{lmodern}
 \usepackage{mathdots}
 \usepackage{mathtools}
 \usepackage{microtype}
@@ -28,6 +25,26 @@
 \usepackage[normalem]{ulem}
 \usepackage[all]{xy}
 \usepackage{imakeidx}
+
+\makeatletter   
+\renewcommand\maketitle{
+\begin{titlepage}
+    \begin{center}
+    \vspace*{15em}
+    {\fontsize{50}{60}\selectfont \textit{\@title}}
+    \vspace{2em}
+
+    \begin{Large}
+        {\descrip}
+    \end{Large}
+
+    \vspace{1em}
+    \textbf{\@author}
+    \vfill
+    \@date
+    \end{center}
+\end{titlepage}}
+\makeatother
 
 \theoremstyle{definition}
 \newtheorem*{axiom}{Axiom}
