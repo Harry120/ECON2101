@@ -204,7 +204,43 @@
 \begin{itemize}
     \item \textbf{Walras prices} are the unique prices (up to normalisation) such that when every individual attempts to maximise their utility at market prices, the aggregate demand is the aggregate endowment. This is equivalent to saying that at these prices, every individual's budget set is tangent to their indifference curve at the point where their budget set intersects the contract curve.
     \item The \textbf{Walras allocation} is the allocation that arises in a market with Walras prices. Equivalently, it is the Pareto efficient allocation $\vec{x}$ such that the line from $\vec{x}$ to the initial endowment is tangent to the individual's indifference curves.
-    \item A \textbf{Walras equilibrium} is the set of Walras prices and the Walras allocation. Theoretically,
+    \item A \textbf{Walras equilibrium} is the set of Walras prices and the Walras allocation. Theoretically, a Walras equilibrium is reached through a \textbf{Walrasian auctioneer}, who proposes a price, and then adjusts it until the aggregate demand for each good is equal to the aggregate endowment for that good. At this point, the market for each good is said to \textbf{clear}.
+    \item \textbf{Walras' law} states that in a system of $n$ goods, if the market clears for $n-1$ goods, then it also clears for the remaining good. This is obvious because the total value supplied must be the total value demanded. 
+    \item The Walras allocation is the unique allocation that is both individually rational and Pareto efficient. This is known as the \textbf{First Welfare Theorem}.
+    \item The \textbf{Second Welfare Theorem} states that any Pareto efficient allocation P, there is an initial endowment for which P is also the Walras allocation.
+\end{itemize}
+
+\section{Technology}
+\subsection{Production}
+\begin{itemize}
+    \item A \textbf{technology} $f$ (also called a \textbf{production function}) is a black box which converts inputs into outputs: $$(q_1, \hdots, q_m) = f(x_1, \hdots, x_n).$$
+    \item The \textbf{short run} is the period of time over which some inputs are \textbf{fixed}. The \textbf{long run} is the period of time over which all inputs are \textbf{variable}.
+    \item The \textbf{marginal product} of an input $x$ is $\partial \vec{q}/\partial x$.
+    \item The assumption of \textbf{diminishing marginal productivity} states that the marginal product of each input is decreasing. Equivalently, $\partial^2 \vec{q}/\partial x^2 < 0$.
+    \item The \textbf{average product} of an input is $AP_x = f(x) / x$.
+    \item An \textbf{isoquant} is the set of inputs that can be used to produce a fixed level of output. This is equivalent to the notion of an indifference curve for a consumer.
+    \item The \textbf{technical rate of substitution} (TRS) of good i for good j is the ratio of the marginal productivities of those goods.
+    \item The \textbf{elasticity of substitution} between inputs i and j is the the percentage change in \textbf{input intensity} $x_i/x_j$ when there is a percentage change in the TRS along an isoquant: $$\epsilon = \frac{dI/I}{dTRS/TRS}. = ?$$
+\end{itemize}
+
+\subsection{Types of Technologies}
+\begin{itemize}
+    \item A Linear technology has the form $f(\vec{x}) = \beta \cdot \vec{x}$ for some set of coefficients $\beta$.
+    \item A Leontief technology has the form $f(\vec{x}) = \min{\beta_i x_i}$ for some set of coefficients $\beta$. This corresponds to the situation where inputs cannot be substituted and must be used in fixed proportions. If however a firm has multiple different Leontief technologies, then substitution possibilities do arise.
+    \item Cobb-Douglas technologies are those with the form $f(\vec{x}) = Ax_1^{a_1}x_2^{a_2}\hdots x_n^{a_n}$
+    \item \textbf{Constant elasticity of substitution} (CES) technologies have the form $f(\vec{x}) = A(a_1x_1^{s}+ a_2x_2^{s}\hdots a_n x_n^{s})^\frac{1}{s}$, where $s < 1$. In this case, the elasticity of substitution is the constant $\frac{1}{1-s}$. When $s = 1$, CES technologies are linear, and as $s \to -\infty$ CES technologies approach Leontief. Furthermore, when $s = 0$ CES becomes equivalent to Cobb-Douglas.
+\end{itemize}
+
+\subsection{Returns to Scale}
+\begin{itemize}
+    \item The production of a good shows \textbf{constant returns to scale} if the technology is homogenous of first degree: $f(t\vec{x}) = tf(\vec{x})$. If $f(t\vec{x}) < tf(\vec{x})$, it is said that there are \textbf{decreasing returns to scale}, and if $f(t\vec{x}) > tf(\vec{x})$, it is said that there are \textbf{increasing returns to scale}.
+\end{itemize}
+
+\subsection{}
+\begin{itemize}
+    \item A \textbf{production possibility frontier} (PPF) (also called the \textbf{transformation frontier}) shows the maximum combinations of goods that can be produced for constrained inputs. It is often defined implicitly: $T(q_1, q_2) = c$, where $T$ represents the total inputs required for the production of $q_1$ and $q_2$. 
+    \item For a single input, the \textbf{opportunity cost} of producing good one in favour of good two is $| dq_2/dq_1 | = \frac{\partial T / \partial q_1}{\partial T / \partial q_2}$, also called the \textbf{marginal rate of transformation} (MTF).
+    \item When there are two inputs and two outputs, an \textbf{input Edgeworth box} is used to represent the combinations 
 \end{itemize}
 
 \end{document}
