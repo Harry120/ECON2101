@@ -213,7 +213,7 @@
 \section{Technology}
 \subsection{Production}
 \begin{itemize}
-    \item A \textbf{technology} $f$ (also called a \textbf{production function}) is a black box which converts inputs into outputs: $$(q_1, \hdots, q_m) = f(x_1, \hdots, x_n).$$
+    \item A \textbf{technology} $f$ (also called a \textbf{production function}) is a black box which converts inputs into outputs: $$(q_1, \hdots, q_m) = f(x_1, \hdots, x_n).$$ Specifically, $f(x)$ describes the maximum possible output for input combination $x$. An input-output combination describes a \textbf{feasible plan} if it is possible to produce the output given the inputs. The collection of all feasible plans is the \textbf{production set}.
     \item The \textbf{short run} is the period of time over which some inputs are \textbf{fixed}. The \textbf{long run} is the period of time over which all inputs are \textbf{variable}.
     \item The \textbf{marginal product} of an input $x$ is $\partial \vec{q}/\partial x$.
     \item The assumption of \textbf{diminishing marginal productivity} states that the marginal product of each input is decreasing. Equivalently, $\partial^2 \vec{q}/\partial x^2 < 0$.
@@ -225,9 +225,9 @@
 
 \subsection{Types of Technologies}
 \begin{itemize}
-    \item A Linear technology has the form $f(\vec{x}) = \beta \cdot \vec{x}$ for some set of coefficients $\beta$.
+    \item A Linear technology has the form $f(\vec{x}) = \beta \cdot \vec{x}$ for some set of coefficients $\beta$. This corresponds to the situation where the goods are perfect substitutes.
     \item A Leontief technology has the form $f(\vec{x}) = \min{\beta_i x_i}$ for some set of coefficients $\beta$. This corresponds to the situation where inputs cannot be substituted and must be used in fixed proportions. If however a firm has multiple different Leontief technologies, then substitution possibilities do arise.
-    \item Cobb-Douglas technologies are those with the form $f(\vec{x}) = Ax_1^{a_1}x_2^{a_2}\hdots x_n^{a_n}$
+    \item Cobb-Douglas technologies are those with the form $f(\vec{x}) = Ax_1^{a_1}x_2^{a_2}\hdots x_n^{a_n}$.
     \item \textbf{Constant elasticity of substitution} (CES) technologies have the form $f(\vec{x}) = A(a_1x_1^{s}+ a_2x_2^{s}\hdots a_n x_n^{s})^\frac{1}{s}$, where $s < 1$. In this case, the elasticity of substitution is the constant $\frac{1}{1-s}$. When $s = 1$, CES technologies are linear, and as $s \to -\infty$ CES technologies approach Leontief. Furthermore, when $s = 0$ CES becomes equivalent to Cobb-Douglas.
 \end{itemize}
 
@@ -239,9 +239,15 @@
 \subsection{Production possibility frontier}
 \begin{itemize}
     \item A \textbf{production possibility frontier} (PPF) (also called the \textbf{transformation frontier}) shows the maximum combinations of goods that can be produced for constrained inputs. It is often defined implicitly: $T(q_1, q_2) = c$, where $T$ represents the total inputs required for the production of $q_1$ and $q_2$. 
-    \item For a single input, the \textbf{opportunity cost} of producing good one in favour of good two is $| dq_2/dq_1 | = \frac{\partial T / \partial q_1}{\partial T / \partial q_2}$, also called the \textbf{marginal rate of transformation} (MTF).
+    \begin{itemize}
+        \item This would correspond to the situation where goods (corresponding to inputs) are shared between two consumers, producing two different levels of utility (corresponding to $q_1$ and $q_2$).
+    \end{itemize}
+    \item For a single input, the \textbf{opportunity cost} of producing good one in favour of good two is $| dq_2/dq_1 | = \frac{\partial T / \partial q_1}{\partial T / \partial q_2}$, also called the \textbf{marginal rate of transformation} (MTF). This would be analogous to the situation where one consumer's utility is increased at the expense of the other's.
     \item When there are two inputs and two outputs, an \textbf{input Edgeworth box} is used to represent the combinations. 
     \item An input allocation is \textbf{Lerner efficient} when there is no allocation which yields a higher output for either good without reducing the output of one of the goods. These allocations arise where the isoquants for the two outputs are tangent to each other.
+    \begin{itemize}
+        \item This would correspond to the situation where neither consumer could increase their utility without reducing the other's - i.e. a Pareto Efficient solution.
+    \end{itemize}
 \end{itemize}
 
 \section{Costs}
@@ -271,14 +277,27 @@
     \item \textbf{Perfect competition} arises when a market has many sellers and many buyers, all will perfect information and no barriers to entry.
     \item A trader under perfect competition is said to be a \textbf{price-taker}, in that they cannot influence the price through their own actions.
     \item The \textbf{profit} for a firm is defined as the difference between total revenue and total cost: $\pi(q) = pq - c(q)$. When $\pi > 0$, $\pi = 0$ or $\pi < 0$, we say that the firm makes \textbf{supernormal profits}, \textbf{normal profits} or \textbf{losses} respectively.
+    \begin{itemize}
+        \item Profit doesn't have a good analogue for consumers, because the value of a consumer's utility cannot be converted into a monetary value. (because consumers do not have absolute utility but only ordinal preferences)
+    \end{itemize}
     \item Normal profits arise when the average cost of producing an output is the price of that output.
 \end{itemize}
 
 \subsection{Short Run Profit Maximization}
 \begin{itemize}
-    \item The \textbf{isoprofit line} is the set of combinations of input and output quantities that produce the same profit. The profit is maximised when the isoprofit line is tangent to the technology frontier. This corresponds to the point at which the marginal cost of production is equal to the value of the marginal product.
+    \item The \textbf{isoprofit line} is the set of combinations of input and output quantities that produce the same profit. In general, it has the form $\pi = pq - \beta \vec{x}$, implicitly relating the output requirement $q$ and the inputs $\vec{x}$.
+    \begin{itemize}
+        \item The profit is maximised when the isoprofit line is tangent to the technology frontier. 
+        \item This corresponds to the point at which the marginal cost of production is equal to the value of the marginal product.
+    \end{itemize}
     \item Profit maximisation is possible only with a production function that eventually has decreasing returns to scale.
-    \item A firm should continue operation when the total variable cost is less than the total revenue. This can occur when the price is greater than the average variable cost. The \textbf{shutdown price} is therefore the minimum of the firm's average variable cost.
+    \item Another way of calculating a supply curve is to decompose the action of the firms into two parts. 
+    \begin{itemize}
+        \item First of all the firm will ensure that if they are producing a quantity $q$, then it will be produced at the minimum cost. 
+        \item Secondly, the firm will ensure that they produce the profit maximising quantity of goods.
+        \item The firm's profits are then a function of only the output level alone, allowing for maximisation. This maximum will occur when the price is equal to the marginal cost, and the marginal cost is rising (when the second derivative of the costs is greater than zero).
+    \end{itemize} 
+    \item Even if the maximum profit is negative, a firm should continue operation when the total variable cost is less than the total revenue. This can occur when the price is greater than the minimum average variable cost. The \textbf{shutdown price} is therefore the minimum of the firm's average variable cost.
     \item The \textbf{shutdown quantity} is the quantity the firm will produce at the shutdown price. This can be found when the marginal cost is equal to the average variable cost.
 \end{itemize}
 
@@ -291,8 +310,22 @@
 
 \subsection{Perfect Competition in the Long Run}
 \begin{itemize}
-    \item 
+    \item If firms in a market are not making zero profit, then others will either enter of exit over the long run, thereby ensuring that profits will eventually be zero. 
+    \item A firm will make normal profits when the price is the minimum of the average cost. This is also where the marginal cost equals the average cost. Therefore, in the long run, if all firms are identical, then the equilibrium price will be this minimum.
 \end{itemize}
 
+\section{Monopoly}
+\subsection{Uniform pricing}
+\begin{itemize}
+    \item A monopoly is by definition able to set prices for the goods it produces. If $D(Q)$ is the price demand for their goods at the quantity $Q$, then $\pi(Q) = D(Q)Q - c(Q)$, where $c(Q)$ represents the minimum cost of producing at quantity $Q$. The task of the firm is then to maximize this profit. This occurs when marginal revenue is equal to marginal cost, which can also be expressed as $$p(1+ \frac{1}{\varepsilon}) = c'(Q).$$
+    \item The \textbf{absolute mark-up} is the difference between the monopoly's optimal price and their marginal cost at that price. 
+    \item The \textbf{relative mark-up} is the absolute markup divided by the equilibrium price. This gives a measure of market power that is called the \textbf{Lerner Index}. The equation relating the monopoly's profit maximising price and quantity can also be written as $$\frac{p - c'(Q)}{p} = -\frac{1}{\varepsilon},$$ showing that the Lerner Index is equal to the reciprocal of the elasticity.
+    \item Due to the fact that the Monopoly's marginal revenue does not coincide with the economy's demand function, the monopoly will not produce at a price where their marginal cost is equal to the price. This will lead to Pareto inefficiency and deadweight loss. 
+\end{itemize}
+
+\subsection{Differential Pricing}
+\begin{itemize}
+    \item 
+\end{itemize}
 
 \end{document}
