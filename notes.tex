@@ -107,7 +107,8 @@
         \item \textbf{totality:} ($\forall x, y \in S$) $x \succsim y$ or $y \succsim x$
         \item \textbf{transitivity:} ($\forall x, y, z \in S$) $x \succsim y$ and $y \succsim z$ implies $x \succsim z$
     \end{enumerate}
-    \item Often, \textbf{monotonicity} is also required: if $x \in S$ has every entry greater than or equal to $y \in S$, then $x \succsim y$. If at least one entry is in $x$ is greater than the corresponding entry in $y$, then \textbf{weak monotonicity} implies $x \succsim y$ and \textbf{strong monotonicity} implies $x \succ y$.
+    \item Often, \textbf{monotonicity} is also required: if $x \in S$ has every entry greater than to $y \in S$, then $x \succ y$. i.e. `more of everything is better'.
+    \item \textbf{Strong monotonicity} requires that if $x_i \geq y_i$ for all $i$, and $x_k > y_k$ for at least one $k$, then $x \succ y$. i.e. `more of anything is better'.
     \item A binary relation is \textbf{convex} if for $x, y \in S$ with $x \succsim y$, when $z$ lies on the line segment joining $x$ and $y$, then $z \succsim y$.
 \end{itemize}
 
@@ -325,7 +326,103 @@
 
 \subsection{Differential Pricing}
 \begin{itemize}
-    \item 
+    \item A producer is said to engage in \textbf{differential pricing} when they sell the same product at different prices to different individuals, and that price difference cannot be explained by a difference in marginal cost. 
+    \item In order for a firm to engage in differential pricing, they must have
+    \begin{itemize}
+        \item market power
+        \item the ability to sort customers
+        \item the ability to prevent resale of the product.
+    \end{itemize}
+    \item \textbf{First degree} price discrimination is when a firm is able to sort their customers perfectly, and can completely eliminate consumer surplus by charging consumers exactly their \textbf{reservation price}.
+    \begin{itemize}
+        \item First degree price discrimination will still lead to market efficiency, even if the firm has a complete monopoly.
+    \end{itemize}
+    \item \textbf{Second degree} price discrimination occurs when the producer has information on the distribution of their customers, but cannot distinguish them. 
+    \begin{itemize}
+        \item The firm will then engage in \textbf{menu pricing}, which allows the consumers to sort themselves. Menu pricing can take two different forms: \textbf{bundling} (e.g. the 2 litre bottle of juice is only 50\% more expensive than the 1 litre bottle) and \textbf{nonlinear pricing} (e.g. where cell phone data is \$50/month for 10GB, and then \$5/GB afterwards). 
+    \end{itemize}
+    \item \textbf{Third degree} price discrimination is when a firm is able to assign consumers to a group and vary prices between groups. 
+    \begin{itemize}
+        \item In order to maximize profit, a firm engaging in third degree price discrimination will ensure that the marginal revenue from each group is equal to the marginal cost.
+    \end{itemize}
+    \item The main difference between second and third degree price discrimination is that third degree price discrimination requires firms to distinguish consumers before the purchase takes place, whereas second degree discrimination occurs only at the time of purchase.
+\end{itemize}
+
+\section{Risk}
+
+\section{Game Theory}
+\subsection{Static Games}
+\begin{itemize}
+    \item A game consists of \textbf{players}, \textbf{strategies} and \textbf{payoffs}. In a \textbf{static game}, all players decide on their strategies simultaneously, without information about the other players. 
+    \item Normal form games can be represented with one or more matrices. The entries in the matrices represent the payoffs for the different players, and in standard form the first index is the row, the second the column, the third the matrix etc. 
+    \item If the payoffs in each every cell are zero, then the game is called a \textbf{zero sum game}.
+\end{itemize}
+
+\subsection{Solving Static Games}
+\begin{itemize}
+    \item A player has a \textbf{dominant strategy} if there is one strategy that is optimal for that player regardless of the actions of the other players. A strategy that is always worse than other strategies is called a \textbf{dominated strategy}.
+    \item A \textbf{dominant strategy equilibrium} (DSE) arises when all players play dominant strategies: if one player does not have a dominant strategy, then the game cannot have a DSE.
+    \item A special type of game is a \textbf{prisoner's dilemma}, which requires that each player has a dominant strategy and the DSE outcome yields payoffs that are worse for each player than some other possible outcome.
+    \item A \textbf{Nash equilibrium} (NE) is a outcome where no player can improve their payoff by unilateral changes in strategy.
+\end{itemize}
+
+\subsection{Mixed Strategies}
+\begin{itemize}
+    \item A \textbf{mixed strategy} is one where different actions are taken with different probabilities. The goal of the players is then to find the probability distribution that maximizes their expected utility. For any game with a finite number of players and finite number of strategies, there is always a mixed strategy (when viewing pure strategies as a type of mixed strategy) Nash equilibrium.
+    \item In a two player game where both players are using mixed strategies, the optimal probability distribution for the first player can be expressed as a function of the actions of the second player. This is known as the \textbf{best response function} for the first player. In this kind of a scenario, the intersection of best response functions for the two players is the Nash equilibrium.
+\end{itemize}
+
+\subsection{Dynamic Games}
+\begin{itemize}
+    \item \textbf{Dynamic games} refer to situations where players act sequentially. They are depicted with a \textbf{game tree}, which consists of an initial node (representing the initial state), intermediate nodes (points at which players make decisions), and terminal nodes (the payoffs for the players that resulted from the given actions).
+    \item A dashed line is drawn between intermediate nodes if the player choosing a strategy has the same information at both nodes (for example, they are not yet sure what other players have decided to do). The set of nodes connected by a dashed line is called an \textbf{information set}. If an information set has only one element, it is called a \textbf{singleton information set}. 
+    \item If all information sets in a game are singleton information sets then we say that the game has \textbf{perfect information}. A game with perfect information can be solved by working upwards through larger and larger sub-games, in a form of `backwards induction'.
+    \item In a dynamic game, a player's strategy is a list of all of which action they will take for each of the situations which they find themselves in. 
+    \item A game is in \textbf{Nash equilibrium} if neither player can improve their payoff by acting unilaterally. 
+    \item A Nash equilibrium is a \textbf{subgame perfect Nash equilibrium} if it is a Nash equilibrium for every subgame.
+\end{itemize}
+
+\section{Oligopoly}
+\subsection{Static competition}
+\begin{itemize}
+    \item Competition in an oligopoly can be modeled in two ways: \textbf{quantity competition} examines the situation where firms choose their quantity and sell at the resulting price, and \textbf{price competition} examines the opposite situation - firms choose prices and leave quantities up to the market.
+    \item A \textbf{Cournot duopoly} is a quantity competition scenario where there are two firms competing in a market with price given by $p = A - Q$ where $Q$ is the total output of both firms. 
+    \begin{itemize}
+        \item In this situation, each firm has a best response function determined by their cost structure. The point of intersection of these best response functions is a Nash equilibrium.
+        \item In a generalized Carnot oligopoly, if there are $n$ firms with identical cost structure of $c$ dollars per unit, then each firm will produce $(a-c)/(n+1)$ units at a price of $(a + cn)/(n + 1)$. Hence as $n$ goes to infinity, the total production approaches $a-c$ units, and the price approaches $c$, the result expected in a model with perfect competition. 
+    \end{itemize}
+    \item A \textbf{Bertrand duopoly} is a price competition scenario where two firms set prices at $p_1$ and $p_2$. If these prices are the same, they split the market exactly in half. If one is less than the other, then all consumers purchase the cheaper good. 
+    \item The Nash equilibrium price in a Bertrand duopoly is when price is equal to marginal cost. This is sometimes known as the \textbf{Bertrand paradox}, because the Cournot oligopoly seems to require infinite firms to read this optimal price, whereas the Bertrand duopoly requires only two. This is because the Bertrand duopoly requires that the firms
+    \begin{itemize}
+        \item sell \textbf{homogeneous products} - consumers make their decisions purely based on price
+        \item have no \textbf{capacity constraints} - the firm is able to supply all of the consumers at once if required.
+    \end{itemize}
+    \item A \textbf{Hotelling duopoly} is one where two firms compete with slightly differentiated products - for example the location of the business is accounted for by assigning a transport cost for consumers to move to a different location.
+    \item If a competitive situation has two goods that move inversely in price, then they are said to be \textbf{strategic substitutes}. Otherwise, they are said to be \textbf{strategic complements}.
+\end{itemize}
+
+\subsection{Dynamic competition}
+\begin{itemize}
+    \item The \textbf{Stackelberg Carnot duopoly} is a dynamic Carnot duopoly, and the \textbf{Stackelberg Hotelling duopoly} is a dynamic Carnot duopoly. 
+    \item In general, when they goods in consideration are strategic substitutes, then there is a first mover advantage in a leader-follower game, whereas if the goods are strategic complements, then the second player has the advantage.
+\end{itemize}
+
+\section{Externalities}
+
+\section{Asymmetric Information}
+\subsection{Hidden Action}
+\begin{itemize}
+    \item A \textbf{hidden action} model is designed to model contracting work - there is a \textbf{principle}, who employs an \textbf{agent}, but cannot observer their actions - only their output. 
+    \item In a typical situation, the principle wants to ensure that the agent will undertake the work (this produces the \textbf{individual rationality} (IRC) constraint) and that they will also take the actions that provide the greatest payoff to the principle (this is the \textbf{incentive compatibility} (ICC) constraint).
+    \item When there is full information, the principle does not have to worry about the ICC, and can therefore secure a better outcome for themselves. The utility forgone when there is not full information is called the \textbf{information rent}. 
+\end{itemize}
+
+\subsection{Hidden Information}
+\begin{itemize}
+    \item A \textbf{hidden information} model is designed to model menu pricing - there is a firm (the principle), and a range of consumers of different types (the agents). The firm must create a menu which optimizes their profits, knowing only the distribution of the different types of consumers.
+    \item The firm can choose to either construct a \textbf{separating equilibrium} where each type of consumer buys a targeted class of goods, a \textbf{pooling equilibrium}, where all consumers buy only one type of good, and a \textbf{semi-separating equilibrium}, where only one type of consumer buys one type of goods.
+    \item In a separating equilibrium, each type of consumer has IC constraints and IR constraints. In a pooling equilibrium or semi-separating equilibrium, there are only IR constraints.
+    \item In a separating equilibrium, some of the constraints will be redundant, and the others are said to \textbf{bind}.
 \end{itemize}
 
 \end{document}
